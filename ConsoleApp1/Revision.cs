@@ -170,17 +170,21 @@
             Console.WriteLine($"Even: {Even} and Odd: {Odd}");
         }
 
-        public void DuplicateElement()
+        public void Occurences()
         {
-            int[] numbers = { 1, 2, 3, 2, 4, 5, 1 };
-            int sum = 0;
-            int length = numbers.Length;
+            int[] numbers = { 3, 4, 5, 3, 6, 3, 7 };
+            int target = 3;
+            int count = 0;
 
-            for (int i = 0; i <= length - 1; i++)
+            foreach (int num in numbers)
             {
-                sum += numbers[i];
+                if (num == target)
+                {
+                    count++;
+                }
             }
-            Console.Write(sum);
+
+            Console.WriteLine($"The number {target} appears {count} times in the array.");
         }
 
         public void Main()
@@ -200,5 +204,15 @@
 
             Console.WriteLine("The sum of the array is: " + sum);
         }
+
+        public int Add(int a, int b)
+        {
+            int sum = a + b;
+
+            return sum;
+        }
+
+
+
     }
 }

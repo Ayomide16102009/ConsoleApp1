@@ -10,11 +10,11 @@ Console.WriteLine("Hello, World!");
 //reflection.Person();
 
 //Addition1 addition1 = new Addition1();
-//addition1.EvenOrOdd();
+//addition1.Addition();
 
 //Addition2 addition2 = new Addition2();
 //addition2.SimpleInterest();
 
 Revision revision = new Revision();
-revision.Main();
+revision.Add(10, 5);
 
